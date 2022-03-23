@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: es-svc1 
+  labels:
+    app: es
+spec:
+  selector:
+    app: es
+  ports:
+    - port: 9200
+  type: NodePort
